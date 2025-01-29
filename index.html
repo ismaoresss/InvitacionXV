@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <title>MAIA VX</title>
+</head>
+<!-- SECCION INICIO -->
+<section Id="inicio">
+    <div class = "contenido">
+        <header>
+            <div class="contenido-header">
+                <h1>|IO|</h1>
+                <nav id="nav" class="">
+                    <ul id="link">
+                        <li><a href="#inicio" class="seleccionado"onclick="seleccionar(this)">INICIO</a></li>
+                        <li><a href="#sobremi"onclick="seleccionar(this)">TARJETA</a></li>
+                        <li><a href="#contacto"onclick="seleccionar(this)">CONTACTO</a></li>
+                    </ul>
+                </nav>
+                <!-- icono del menu -->
+                <div id="icono-nav" onclick="responsiveMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="redes">
+                    <a href="https://www.linkedin.com/in/ismael-oreste-8b116a254/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/ismaoresss"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/isma_ores/?hl=es-la"><i class="fa-brands fa-instagram-square"></i></a>
+                </div>
+            </div>
+        </header>
+        <div class="presentacion">
+            <p class="bienvenida">BIENVENIDOS </p>
+            <h1 class="mis-15">Mis 15 Maia</h1>
+            <p class="descripcion"> CUENTA REGRESIVA</p>
+            <div id="cuenta"></div>
+        </div>
+    </div>
+
+
+</section>
+<!-- SECCION SOBRE MI-->   
+<section Id="sobremi">
+    <div class="contenedor-foto">
+        <video width="350px" height="250px" controls>
+            <source src="img/video.MP4" type="video/mp4">
+        </video>
+    </div>
+    <div class="sobremi">
+        <p class="titulo-seccion">Sobre Mi</p>
+        <h2>Hola, soy <span>Ismael Oreste</span></h2>
+        <h3>Programador</h3>
+        <p>Mi meta es especializarme en
+            el campo de la programación y
+            unirme a un equipo profesional
+            donde los logros y éxitos de
+            cada miembro sean valorados
+            en el entorno laboral.</p>
+        <a href="https://drive.google.com/file/d/1A87ZWW_k2zcyOtsQ6gBR5Pk5E4IjkUQO/view?usp=sharing">Descargar CV</a>
+    </div>
+</section>
+
+<!-- SECCTION C O N T A C T O -->
+<section id="contacto">
+    <h3 class="titulo-seccion">Contactame</h3>
+    <div class="contenedor-form">
+        <form action="https://formspree.io/f/xnqewwap" method="POST">
+            <div class="fila mitad">
+                <label>
+                    Nombre Completo*:
+                    <input type="text" name="nombre" placeholder="Nombre Completo" class="input-mitad">
+                </label>
+                <label>
+                    Dirección de Email*:
+                    <input type="email" name="email" placeholder="Dirección de Email" class="input-mitad">
+                </label>
+            </div>
+            <div class="fila">
+                <label>
+                    Tema*:
+                    <input type="text" name="tema" placeholder="Tema..." class="input-full">
+                </label>
+            </div>
+            <div class="fila">
+                <label>
+                    Mensaje*:
+                    <textarea name="mensaje" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                </label>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+        </form>
+    </div>
+</section>
+
+<!-- SECCTION FOOTER -->
+<footer>
+    <P>Todos los derechos reservados - 2024</P>
+    <div class="redes">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+    </div>
+</footer>
+<!-- seccion R E S P O N S I V E -->
+<script src="script.js"></script>
+<script src="js/simplyCountdown.min.js"></script>
+<script src="js/countdown.js"></script>
+<body>
+    
+</body>
+</html>
+
