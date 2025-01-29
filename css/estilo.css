@@ -545,7 +545,7 @@
 
 
 
-        
+
         /* *********************/
         /* seccion R E S P O N S I V E */
         /* *********************/
@@ -577,26 +577,33 @@
                 display: block;
             }
             #inicio .contenido .presentacion h2 {
-                font-size: 40px;
+                font-size: 6vw;
             }
+            
             /* seccion SOBRE MI */
-            #sobremi {
-                padding: 50px 0;
-                display: block;
-            }
+            /* Ajustar el tamaño de los elementos en las secciones sobre mí y contacto */
             #sobremi .contenedor-foto {
                 max-width: 200px;
                 margin: auto;
             }
-            #sobremi .contenedor-foto img {
-                padding: 8px;
-            }
+
             #sobremi .sobremi .titulo-seccion {
                 text-align: center;
             }
+
             #sobremi .sobremi h2 {
-                font-size: 25px;
+                font-size: 2rem;
                 text-align: center;
+            }
+
+            #contacto .contenedor-form .mitad {
+                margin-bottom: 15px;
+                display: block;
+            }
+
+            #contacto .contenedor-form .mitad input {
+                width: 100%;
+                margin-bottom: 15px;
             }
             /* seccion CONTACTO */
             #contacto {
