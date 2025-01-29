@@ -111,7 +111,7 @@
             letter-spacing: 2px; /* Espaciado entre letras para mejorar legibilidad */
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra suave para profundidad */
             text-decoration: underline; /* Subrayado */
-            text-decoration-thickness: 4px; /* Grosor del subrayado */
+            text-decoration-thickness: 2px; /* Grosor del subrayado */
             text-decoration-color: #82A46B; /* Color del subrayado a juego con el tema */
             margin-bottom: 20px; /* Espaciado inferior */
             
@@ -209,6 +209,9 @@
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/fondo4.jpg");
             background-size: cover;
             background-position: center;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         #sobremi .contenido {
@@ -226,16 +229,32 @@
         }
 
         #sobremi .Tittulo-seccion {
-            font-size: 28px; /* Tamaño más destacado */
+            font-size: 23px; /* Tamaño más destacado */
             font-family: "Higuen Elegant Serif", serif; /* Fuente elegante */
             color: #fff; /* Texto blanco para contraste */
             text-transform: uppercase; /* Mayúsculas para un estilo más formal */
             letter-spacing: 2px; /* Espaciado entre letras para mejorar legibilidad */
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra suave para profundidad */
             text-decoration: underline; /* Subrayado */
-            text-decoration-thickness: 4px; /* Grosor del subrayado */
+            text-decoration-thickness: 2px; /* Grosor del subrayado */
             text-decoration-color: #82A46B; /* Color del subrayado a juego con el tema */
-            margin-bottom: 20px; /* Espaciado inferior */
+            margin-bottom: 15px; /* Espaciado inferior */
+        }
+
+        #sobremi .sub-titulo {
+            font-size: 20px; 
+            color: #fff;
+            font-family: "Higuen Elegant Serif", serif; /* Fuente elegante */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            margin-bottom: 15px; /* Espacio debajo del título */
+            margin-top: 10px;
+            text-decoration: underline; /* Subrayado */
+            letter-spacing: 2px; /* Espaciado entre letras para mejorar legibilidad */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra suave para profundidad */
+            text-decoration-thickness: 2px; /* Grosor del subrayado */
+            text-decoration-color: #82A46B; /* Color del subrayado a juego con el tema */
         }
 
         .btn-ubicacion {
@@ -244,8 +263,8 @@
             color: #f7f6f6;
             border-radius: 30px;
             border: 1px solid #f5f3f3;
-            padding: 20px 30px;
-            margin-top: 30px;
+            padding: 15px 25px;
+            margin-top: 5px;
             transition: .5s;
         }
         
@@ -257,7 +276,7 @@
         .marco-flores {
             position: relative;
             width: 620px; /* Ajusta para adaptarlo al video (ancho del video + padding) */
-            height: 470px; /* Ajusta para adaptarlo al video (alto del video + padding) */
+            height: 420px; /* Ajusta para adaptarlo al video (alto del video + padding) */
             padding: 10px; /* Espacio para el borde */
             background: url('../img/marco2.jpg') no-repeat center;
             background-size: cover;
@@ -272,6 +291,45 @@
             border-radius: 15px; /* Bordes suaves para el video */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
+
+        /* Contenedor de flechas */
+        .contenedor-flechas {
+            display: flex;
+            flex-direction: column; /* Apilar flechas */
+            align-items: center;
+            margin-bottom: 15px; /* Espacio entre flechas y botón */
+            animation: flechas-movimiento 1.5s infinite; /* Movimiento */
+        }
+
+        /* Estilo para cada flecha */
+        .flecha {
+            width: 15px; /* Ancho de la flecha */
+            height: 15px; /* Alto de la flecha */
+            border-left: 3px solid #fff; /* Línea izquierda */
+            border-top: 3px solid #fff;
+            transform: rotate(-45deg); /* Rotación para formar la flecha */
+            margin: 5px; /* Separación entre flechas */
+        }
+
+        /* Animación del movimiento */
+        @keyframes flechas-movimiento {
+            0% {
+                transform: translateY(-10px) rotate(-45deg); /* Posición inicial */
+            }
+            50% {
+                transform: translateY(0) rotate(-45deg); /* Centro */
+            }
+            100% {
+                transform: translateY(-10px) rotate(-45deg); /* Regreso */
+            }
+        }
+
+
+
+
+
+
 
         /* *********************/
         /* seccion contacto */
