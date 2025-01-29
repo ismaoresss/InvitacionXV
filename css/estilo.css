@@ -18,6 +18,8 @@
             background-size: cover;
             background-position: center center;
             height: 100vh;
+            justify-content: center;
+            align-items: center;
         }
 
 
@@ -72,8 +74,6 @@
         
         #inicio .contenido header .contenido-header nav ul li a:hover {
             color: #f3f3f3;
-            
-    
         }
         
         #inicio .contenido header .contenido-header .redes a {
@@ -102,6 +102,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            text-align: center;
         }
         
         #inicio .contenido .presentacion .bienvenida {
@@ -160,6 +161,60 @@
             color: #fff;
             display: none;
         }
+
+        /* *********************/
+        /* Media Query para Móviles */
+        /* *********************/
+
+        @media (max-width: 768px) {
+
+            #inicio .contenido header .contenido-header {
+                flex-direction: column;
+                align-items: center;
+                padding: 15px 10px;
+            }
+
+            #inicio .contenido header .contenido-header h1 {
+                font-size: 24px;
+                text-align: center;
+            }
+
+            #inicio .contenido header .contenido-header nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #inicio .contenido header .contenido-header nav ul li a {
+                font-size: 16px;
+                margin: 10px 0;
+            }
+
+            .mis-15 {
+                font-size: 50px; /* Ajusta el tamaño para pantallas pequeñas */
+            }
+
+            #inicio .contenido .presentacion {
+                height: auto;
+                padding: 20px;
+            }
+
+            #inicio .contenido .presentacion h2 {
+                font-size: 40px;
+            }
+
+            #inicio .contenido .presentacion .descripcion {
+                font-size: 16px;
+            }
+
+            #inicio .contenido .presentacion a {
+                padding: 15px 20px;
+                font-size: 16px;
+            }
+        }
+
+
+
+
 
         /* *********************/
         /* CUENTA REGRESIVA */
@@ -628,5 +683,34 @@
                 width: 100%;
                 margin-bottom: 15px;
             }
+
+
+
+
+
+
+
+            /* Responsivo para Móviles */
+            @media (max-width: 768px) {
+                #sobremi .contenido {
+                    padding: 20px;
+                }
+                
+                #sobremi .Tittulo-seccion {
+                    font-size: 20px;
+                }
+                
+                #sobremi .sub-titulo {
+                    font-size: 18px;
+                }
+                
+                .btn-ubicacion {
+                    padding: 12px 18px;
+                    font-size: 14px;
+                }
+            }
+
+
+
         }
         
