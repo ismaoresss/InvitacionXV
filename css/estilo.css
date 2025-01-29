@@ -104,11 +104,16 @@
         }
         
         #inicio .contenido .presentacion .bienvenida {
-            font-size: 35px;
-            margin-bottom: 10px;
-            font-family: "Higuen Elegant Serif";
-            letter-spacing: 5px;
-            color: #f3f3f3;
+            font-size: 25px; /* Tamaño más destacado */
+            font-family: "Higuen Elegant Serif", serif; /* Fuente elegante */
+            color: #fff; /* Texto blanco para contraste */
+            text-transform: uppercase; /* Mayúsculas para un estilo más formal */
+            letter-spacing: 2px; /* Espaciado entre letras para mejorar legibilidad */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra suave para profundidad */
+            text-decoration: underline; /* Subrayado */
+            text-decoration-thickness: 4px; /* Grosor del subrayado */
+            text-decoration-color: #82A46B; /* Color del subrayado a juego con el tema */
+            margin-bottom: 20px; /* Espaciado inferior */
             
         }
         
@@ -400,20 +405,6 @@
             #sobremi .sobremi h2 {
                 font-size: 25px;
                 text-align: center;
-            }
-            /* seccion MIS SERVICIOS */
-            #servicios {
-                padding: 50px 15px;
-            }
-            #servicios .fila {
-                display: block;
-            }
-            #servicios .fila .servicio {
-                margin: 10px auto;
-            }
-            /* seccion HABLIDADES MI */
-            .contenedor-skills {
-                padding: 50px 20px;
             }
             /* seccion CONTACTO */
             #contacto {
