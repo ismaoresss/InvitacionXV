@@ -19,7 +19,8 @@
             background-position: center center;
             height: 100vh;
         }
-        
+
+
         #inicio .contenido header {
             background-color: #82A46B;
             position: fixed;
@@ -206,7 +207,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/fondo4.jpg");
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/fondo4.jpg");
             background-size: cover;
             background-position: center;
             flex-direction: column;
@@ -360,26 +361,41 @@
         }
 
         #regalo .sobremi h2 {
-            font-size: 30px;
+            font-size: 35px;
             color: #fff;
             font-weight: bold;
             margin: 0;
             letter-spacing: 2px;
+            font-family: "Higuen Elegant Serif", serif;
         }
 
         #regalo .sobremi h2 span {
             color: #82A46B;
+            font-family: "Higuen Elegant Serif", serif;;
         }
 
         /* Marco decorativo */
         .marco {
             position: relative;
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para resaltar el marco */
+            background: linear-gradient(135deg, rgba(139, 118, 177, 0.8), rgba(130, 164, 107, 0.6)); /* Gradiente suave */
             border-radius: 20px; /* Bordes suaves */
             display: inline-block;
-            border: 5px solid #82A46B; /* El color del marco */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            border: 3px solid transparent;
+            background-clip: padding-box; /* Para evitar que el borde quede sobre el fondo */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra difusa */
+            animation: borderAnimation 1.5s ease-in-out infinite; /* Animación de borde */
+        }
+        @keyframes borderAnimation {
+            0% {
+                border-color: #546592;
+            }
+            50% {
+                border-color: #fff; /* El borde se hace blanco a la mitad de la animación */
+            }
+            100% {
+                border-color: #82A46B;
+            }
         }
 
         .marco h2 {
@@ -388,8 +404,61 @@
             color: #fff;
         }
 
+        /* ALIAS*/
+        .alias-container {
+            margin-top: 10px; /* Espaciado entre logo y alias */
+            padding: 10px 15px;
+            background: #f8f8f8;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra el contenido */
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
 
+        .alias-container:hover {
+            transform: scale(1.05);
+        }
 
+        /* Estilo del alias */
+        #aliasText {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin-bottom: 8px;
+            font-family: "Higuen Elegant Serif", serif;
+        }
+
+        /* Botón de copiar */
+        .copy-btn {
+            background: #4d98df;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .copy-btn i {
+            font-size: 16px;
+        }
+
+        /* Animación cuando se copia */
+        .copy-btn:active {
+            background: #0056b3;
+        }
+        
+        
         
         /* *********************/
         /* seccion contacto */
@@ -472,6 +541,11 @@
             margin: 5px;
             font-size: 26px;
         }
+
+
+
+
+        
         /* *********************/
         /* seccion R E S P O N S I V E */
         /* *********************/

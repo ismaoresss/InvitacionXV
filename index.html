@@ -8,6 +8,7 @@
     />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo.css"/>
+    <link rel="stylesheet" href="js/script.js"/>
     <title>MAIA VX</title>
 </head>
 <!-- SECCION INICIO -->
@@ -71,13 +72,18 @@
     </div>
 </section>
 
-
-<!-- SECCION REGALO-->   
 <!-- SECCION REGALO-->   
 <section Id="regalo">
     <div class="contenedor-foto">
         <img src="img/logoMP.png" alt="">
+        <div class="alias-container">
+            <span id="aliasText">ismaAlimentos</span>
+            <button onclick="copyAlias()" class="copy-btn">
+                <i class="fa fa-clipboard"></i> Copiar
+            </button>
+        </div>
     </div>
+    <br>
     <div class="sobremi">
         <div class="marco">
             <h2>Hola, <span><br>¿como estan?</span> <br> si queres <br>
@@ -90,6 +96,8 @@
             </h2>
         </div>
     </div>
+    
+    
 </section>
 
 <!-- SECCTION C O N T A C T O -->
@@ -135,7 +143,7 @@
     </div>
 </footer>
 <!-- seccion R E S P O N S I V E -->
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 <script src="js/simplyCountdown.min.js"></script>
 <script src="js/countdown.js"></script>
 <body>

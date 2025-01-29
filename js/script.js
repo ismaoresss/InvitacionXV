@@ -14,6 +14,16 @@ function seleccionar(link) {
     x.className = "";
 }
 
+function copyAlias() {
+    const aliasText = document.getElementById("aliasText").innerText;
+    navigator.clipboard.writeText(aliasText).then(() => {
+        alert("Alias copiado: " + aliasText);
+    });
+}
+
+
+
+
 //función que muestra el menu responsive
 function responsiveMenu() {
     var x = document.getElementById("nav");
