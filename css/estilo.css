@@ -602,6 +602,20 @@
                 font-size: 25px;
                 text-align: center;
             }
+
+            #cuenta-regresiva {
+                font-size: 6vw;  /* Porcentaje del tamaño de la ventana */
+            }
+            
+            /* Para pantallas más pequeñas */
+            @media screen and (max-width: 800px) {
+                #cuenta-regresiva {
+                    font-size: 20px;  /* Tamaño más pequeño en pantallas de teléfono */
+                }
+            }
+
+
+
             /* seccion CONTACTO */
             #contacto {
                 padding: 50px 15px;
