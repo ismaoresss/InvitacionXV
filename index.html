@@ -22,7 +22,7 @@
                         <li><a href="#inicio" class="seleccionado"onclick="seleccionar(this)">INICIO</a></li>
                         <li><a href="#sobremi"onclick="seleccionar(this)">INVITACIÓN</a></li>
                         <li><a href="#regalo"onclick="seleccionar(this)">REGALO</a></li>
-                        <li><a href="#contacto"onclick="seleccionar(this)">CONTACTO</a></li>
+                        <li><a href="#contacto"onclick="seleccionar(this)">INTERACCIÓN</a></li>
                     </ul>
                 </nav>
                 <!-- icono del menu -->
@@ -101,37 +101,32 @@
 </section>
 
 <!-- SECCTION C O N T A C T O -->
+<!-- SECCION CONTACTO -->
 <section id="contacto">
-    <h3 class="titulo-seccion">Contactame</h3>
+    <h3 class="titulo-seccion">Interacción</h3>
     <div class="contenedor-form">
         <form action="https://formspree.io/f/xnqewwap" method="POST">
-            <div class="fila mitad">
+            
+            <!-- Campos de música -->
+            <div class="fila">
                 <label>
-                    Nombre Completo*:
-                    <input type="text" name="nombre" placeholder="Nombre Completo" class="input-mitad">
-                </label>
-                <label>
-                    Dirección de Email*:
-                    <input type="email" name="email" placeholder="Dirección de Email" class="input-mitad">
+                    ¿Qué música te gustaría escuchar?*:
+                    <input type="text" name="musica" placeholder="Ej. Rock, Chamame, Pop, Jazz..." class="input-full" required>
                 </label>
             </div>
             <div class="fila">
                 <label>
-                    Tema*:
-                    <input type="text" name="tema" placeholder="Tema..." class="input-full">
-                </label>
-            </div>
-            <div class="fila">
-                <label>
-                    Mensaje*:
-                    <textarea name="mensaje" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                    ¿De qué artista te gustaría escuchar?*:
+                    <input type="text" name="artista" placeholder="Ej. The Beatles,El chaqueño Palavecino, Lady Gaga..." class="input-full" required>
                 </label>
             </div>
 
+            <!-- Botón de envío -->
             <button type="submit" class="btn-enviar">Enviar Mensaje</button>
         </form>
     </div>
 </section>
+
 
 <!-- SECCTION FOOTER -->
 <footer>
