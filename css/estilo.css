@@ -277,8 +277,8 @@
         /* Marco decorativo */
         .marco-flores {
             position: relative;
-            width: 620px; /* Ajusta para adaptarlo al video (ancho del video + padding) */
-            height: 420px; /* Ajusta para adaptarlo al video (alto del video + padding) */
+            width: 600px; /* Ajusta para adaptarlo al video (ancho del video + padding) */
+            height: 410px; /* Ajusta para adaptarlo al video (alto del video + padding) */
             padding: 10px; /* Espacio para el borde */
             background: url('../img/marco2.jpg') no-repeat center;
             background-size: cover;
@@ -292,6 +292,27 @@
         .marco-flores video {
             border-radius: 15px; /* Bordes suaves para el video */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .contenido-ubicacion .col .info{
+            position: relative;
+            top: 40%;
+            background-color: #252A2E;
+            padding: 20px;
+            max-width: 350px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .contenido-ubicacion .col .info ul{
+            list-style: none;
+        }
+        .contenido-ubicacion .col .info ul li{
+            margin-bottom: 20px;
+        }
+        .contenido-ubicacion .col .info ul li i{
+            color: #f8f8f8;
+            display: inline-block;
+            margin-right: 20px;
         }
         
         /* *********************/
