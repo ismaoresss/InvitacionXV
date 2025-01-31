@@ -297,12 +297,14 @@
         .contenido-ubicacion .col .info{
             position: relative;
             top: 40%;
-            background-color: #252A2E;
+            background-color: #82A46B;
             padding: 20px;
             max-width: 350px;
             left: 50%;
             transform: translate(-50%, -50%);
+            color: #f8f8f8;
         }
+        
         .contenido-ubicacion .col .info ul{
             list-style: none;
         }
@@ -313,8 +315,25 @@
             color: #f8f8f8;
             display: inline-block;
             margin-right: 20px;
+            font-weight: bold; /* Negrita opcional */
         }
-        
+
+
+        /* Flex container para centrar ambas secciones horizontalmente */
+        .contenedor-central {
+            display: flex;
+            align-items: center; /* Centrar verticalmente */
+            justify-content: center; /* Centrar horizontalmente */
+            gap: 30px; /* Espaciado entre el video y el mapa */
+            margin-top: 20px; /* Ajusta si es necesario */
+        }
+
+        /* Estilos opcionales para mejorar el diseño */
+        .contenedor-video, .contenido-ubicacion {
+            flex: 1; /* Cada sección ocupa el mismo espacio disponible */
+            max-width: 50%; /* Evitar que se estiren demasiado */
+            text-align: center; /* Asegura el centrado del contenido */
+        }
         /* *********************/
         /* seccion REGALO */
         /* *********************/
