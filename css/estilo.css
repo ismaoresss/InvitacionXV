@@ -293,39 +293,6 @@
             border-radius: 15px; /* Bordes suaves para el video */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-
-
-        /* Contenedor de flechas */
-        .contenedor-flechas {
-            display: flex;
-            flex-direction: column; /* Apilar flechas */
-            align-items: center;
-            margin-bottom: 15px; /* Espacio entre flechas y botón */
-            animation: flechas-movimiento 1.5s infinite; /* Movimiento */
-        }
-    
-        /* Estilo para cada flecha */
-        .flecha {
-            width: 15px; /* Ancho de la flecha */
-            height: 15px; /* Alto de la flecha */
-            border-left: 3px solid #fff; /* Línea izquierda */
-            border-top: 3px solid #fff;
-            transform: rotate(-45deg); /* Rotación para formar la flecha */
-            margin: 5px; /* Separación entre flechas */
-        }
-        
-        /* Animación del movimiento */
-        @keyframes flechas-movimiento {
-            0% {
-                transform: translateY(-10px) rotate(-90deg); /* Posición inicial */
-            }
-            50% {
-                transform: translateY(0) rotate(-90deg); /* Centro */
-            }
-            100% {
-                transform: translateY(-10px) rotate(-90deg); /* Regreso */
-            }
-        }
         
         /* *********************/
         /* seccion REGALO */
@@ -466,12 +433,15 @@
         /* *********************/
         
         #contacto {
+            background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../img/fondo4.jpg");
+            background-size: cover;
+            background-position: center center;
             padding: 100px 15px;
-            background-color: #f3f3f3;
         }
         
         #contacto .titulo-seccion {
             margin-bottom: 20px;
+            
         }
         
         #contacto .contenedor-form {
@@ -481,6 +451,8 @@
         
         #contacto .contenedor-form .fila {
             margin-bottom: 15px;
+            color: #f8f8f8;
+            font-family: "Higuen Elegant Serif", serif;
         }
         
         #contacto .contenedor-form .mitad {
@@ -507,11 +479,12 @@
         #contacto .titulo-seccion {
             text-align: center;
             font-size: 22px;
+            font-family: "Higuen Elegant Serif", serif;
             text-transform: uppercase;
-            color: #111135;
+            color: #f8f8f8;
             text-decoration: underline;
-            text-decoration-color: #d3d3d3;
-            text-decoration-thickness: 5px;
+            text-decoration-color: #82A46B;
+            text-decoration-thickness: 2px;
         }
         
         #contacto .btn-enviar {
@@ -520,14 +493,16 @@
             cursor: pointer;
             transition: .5s;
             padding: 10px 15px !important;
+            font-family: "Higuen Elegant Serif", serif;
+            font-weight: bold;
         }
         
         #contacto .btn-enviar:hover {
-            background-color: #ff5080;
+            background-color: #82A46B;
             color: #fff;
         }
 
-        /* *********************/
+        /**********************/
     
         footer{
             background-color: #000;
