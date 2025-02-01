@@ -137,7 +137,7 @@
             margin: 25px auto;
             font-size: 18px;
             text-align: center;
-            font-family: "Higuen Elegant Serif"
+            font-family: "Higuen Elegant Serif";
         }
         
         #inicio .contenido .presentacion a {
@@ -153,9 +153,6 @@
             transition: .5s;
         }
         
-        #inicio .contenido .presentacion a:hover {
-            background-color: #ff5080;
-        }
         
         #icono-nav {
             color: #fff;
