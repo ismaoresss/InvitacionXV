@@ -705,11 +705,8 @@
             /* INICIO */
 
             #cuenta {
-                font-size: 24px; /* Reduce el tamaño del texto */
-                text-align: center; /* Centra el texto */
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap; /* Asegura que los elementos se ajusten */
+                font-size: 14px;
+                gap: 3px;
             }
             .mis-15 {
                 font-size: 60px; /* Reduce el tamaño del título */
