@@ -701,5 +701,34 @@
                 width: 100%;
                 margin-bottom: 15px;
             }
+
+            /* INICIO */
+
+            #cuenta {
+                font-size: 24px; /* Reduce el tamaño del texto */
+                text-align: center; /* Centra el texto */
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap; /* Asegura que los elementos se ajusten */
+            }
+            .mis-15 {
+                font-size: 60px; /* Reduce el tamaño del título */
+            }
+        
+            #inicio .contenido .presentacion {
+                padding: 20px;
+            }
+        
+            #inicio .presentacion .contenedor-confirmacion {
+                max-width: 90%; /* Asegura que el contenedor sea responsivo */
+                font-size: 14px;
+            }
+        
+            #inicio .presentacion .contenedor-confirmacion a {
+                padding: 8px 16px; /* Ajusta el botón de confirmación */
+                font-size: 14px;
+            }
+
+
         }
         
