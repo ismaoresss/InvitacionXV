@@ -620,7 +620,7 @@
         /* seccion R E S P O N S I V E */
         /* *********************/
         
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 500px) {
             .redes {
                 display: flex;  /* Hace que los iconos sean visibles */
                 justify-content: center;  /* Centra los iconos */
@@ -714,7 +714,7 @@
                     text-align: center;
             }
             .mis-15 {
-                font-size: 60px; /* Reduce el tamaño del título */
+                font-size: 8vw; /* Se ajusta automáticamente */
             }
         
             #inicio .contenido .presentacion {
