@@ -17,7 +17,7 @@
             background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../img/fondo2.jpg");
             background-size: cover;
             background-position: center center;
-            height: 100vh;
+            height: 105vh;
             justify-content: center;
             align-items: center;
         }
@@ -158,7 +158,57 @@
             color: #fff;
             display: none;
         }
+
+        #inicio .presentacion .contenedor-confirmacion {
+            background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco con transparencia */
+            padding: 20px 30px; /* Espaciado interno */
+            border-radius: 15px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            max-width: 500px; /* Ancho máximo */
+            margin: 20px auto; /* Centrado y separación */
+            text-align: center; /* Centrado del contenido */
+            animation: fadeIn 0.8s ease-in-out; /* Animación al cargar */
+        }
         
+        #inicio .presentacion .contenedor-confirmacion h3 {
+            font-family: 'Dancing Script', cursive; /* Fuente elegante */
+            font-size: 24px; /* Tamaño del texto */
+            color: #ffffff; /* Color de texto oscuro */
+            margin-bottom: 15px; /* Separación inferior */
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Sombra suave en el texto */
+        }
+        
+        #inicio .presentacion .contenedor-confirmacion a {
+            display: inline-block;
+            text-decoration: none; /* Sin subrayado */
+            background: #82A46B; /* Color del botón */
+            color: #ffffffb6; /* Texto blanco */
+            padding: 10px 20px; /* Espaciado interno */
+            border-radius: 15px; /* Bordes redondeados */
+            font-family: 'Arial', sans-serif; /* Fuente sencilla */
+            font-size: 16px; /* Tamaño del texto */
+            font-weight: bold; /* Negrita */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+        }
+        
+        #inicio .presentacion .contenedor-confirmacion a:hover {
+            background: #6e8e57; /* Cambio de color al pasar el mouse */
+            transform: translateY(-3px); /* Efecto de elevación */
+        }
+        
+        /* Animación de aparición */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         /* *********************/
         /* CUENTA REGRESIVA */
         /* *********************/
@@ -166,6 +216,7 @@
             display: flex;
             justify-content: center;
             margin-bottom: 100px;
+            height: 90vh;
         }
         
         .simply-section {
