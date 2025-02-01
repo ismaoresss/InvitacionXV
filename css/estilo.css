@@ -705,8 +705,14 @@
             /* INICIO */
 
             #cuenta {
-                font-size: 14px;
-                gap: 3px;
+                #cuenta {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    font-size: 5vw; /* Se adapta al tamaño de la pantalla */
+                    gap: 10px; /* Espacio entre números */
+                    text-align: center;
             }
             .mis-15 {
                 font-size: 60px; /* Reduce el tamaño del título */
