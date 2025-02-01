@@ -620,7 +620,7 @@
         /* seccion R E S P O N S I V E */
         /* *********************/
         
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 800px) {
             .redes {
                 display: flex;  /* Hace que los iconos sean visibles */
                 justify-content: center;  /* Centra los iconos */
@@ -675,20 +675,6 @@
                 font-size: 25px;
                 text-align: center;
             }
-
-            #cuenta-regresiva {
-                font-size: 6vw;  /* Porcentaje del tamaño de la ventana */
-            }
-            
-            /* Para pantallas más pequeñas */
-            @media screen and (max-width: 800px) {
-                #cuenta-regresiva {
-                    font-size: 20px;  /* Tamaño más pequeño en pantallas de teléfono */
-                }
-            }
-
-
-
             /* seccion CONTACTO */
             #contacto {
                 padding: 50px 15px;
@@ -702,35 +688,46 @@
                 margin-bottom: 15px;
             }
 
-            /* INICIO */
-
+        }
+        
+        #cuenta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 5vw; /* Se adapta al tamaño de la pantalla */
+            gap: 10px; /* Espaciado entre números */
+            text-align: center;
+            flex-wrap: nowrap; /* Evita que los números se vayan a otra línea */
+            white-space: nowrap; /* Evita saltos de línea */
+            overflow: hidden; /* Evita desbordes */
+        }
+        
+        .mis-15 {
+            font-size: 8vw; /* Se ajusta automáticamente */
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        /* Ajustes para celulares */
+        @media screen and (max-width: 480px) {
             #cuenta {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    font-size: 5vw; /* Se adapta al tamaño de la pantalla */
-                    gap: 10px; /* Espacio entre números */
-                    text-align: center;
+                font-size: 8vw; 
+                gap: 5px;
             }
+        
             .mis-15 {
-                font-size: 8vw; /* Se ajusta automáticamente */
+                font-size: 10vw;
+            }
+        }
+        
+        @media screen and (max-width: 360px) {
+            #cuenta {
+                font-size: 10vw;
+                gap: 3px;
             }
         
-            #inicio .contenido .presentacion {
-                padding: 20px;
+            .mis-15 {
+                font-size: 12vw;
             }
-        
-            #inicio .presentacion .contenedor-confirmacion {
-                max-width: 90%; /* Asegura que el contenedor sea responsivo */
-                font-size: 14px;
-            }
-        
-            #inicio .presentacion .contenedor-confirmacion a {
-                padding: 8px 16px; /* Ajusta el botón de confirmación */
-                font-size: 14px;
-            }
-
-
         }
         
