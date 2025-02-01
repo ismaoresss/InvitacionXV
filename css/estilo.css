@@ -17,7 +17,7 @@
             background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../img/fondo2.jpg");
             background-size: cover;
             background-position: center center;
-            height: 105vh;
+            height: 125vh;
             justify-content: center;
             align-items: center;
         }
@@ -70,6 +70,7 @@
             text-align: center; /* Centrar el texto */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
             margin-top: 20px; /* Espaciado superior */
+            
         }
         
         #inicio .contenido header .contenido-header nav ul li a:hover {
@@ -116,6 +117,7 @@
             text-decoration-thickness: 2px; /* Grosor del subrayado */
             text-decoration-color: #82A46B; /* Color del subrayado a juego con el tema */
             margin-bottom: 20px; /* Espaciado inferior */
+            margin-top: 280px;
             
         }
         
@@ -161,13 +163,14 @@
 
         #inicio .presentacion .contenedor-confirmacion {
             background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco con transparencia */
-            padding: 20px 30px; /* Espaciado interno */
+            padding: 5px 10px; /* Espaciado interno */
             border-radius: 15px; /* Bordes redondeados */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
             max-width: 500px; /* Ancho máximo */
             margin: 20px auto; /* Centrado y separación */
             text-align: center; /* Centrado del contenido */
             animation: fadeIn 0.8s ease-in-out; /* Animación al cargar */
+            margin-top: -10px;
         }
         
         #inicio .presentacion .contenedor-confirmacion h3 {
