@@ -622,7 +622,10 @@
         
         @media screen and (max-width: 800px) {
             .redes {
-                border: 2px solid red; /* Esto hará que el contenedor sea visible */
+                display: flex;  /* Hace que los iconos sean visibles */
+                justify-content: center;  /* Centra los iconos */
+                gap: 10px;  /* Espaciado entre iconos */
+                margin-top: 10px; /* Espaciado con el texto */
             }
             nav {
                 display: none;
