@@ -161,7 +161,7 @@
             color: #fff;
             display: none;
         }
-
+        
         /* *********************/
         /* CUENTA REGRESIVA */
         /* *********************/
@@ -259,21 +259,6 @@
             text-decoration-color: #82A46B; /* Color del subrayado a juego con el tema */
         }
 
-        .btn-ubicacion {
-            display: inline-block;
-            text-decoration: none;
-            color: #f7f6f6;
-            border-radius: 30px;
-            border: 1px solid #f5f3f3;
-            padding: 15px 25px;
-            margin-top: 5px;
-            transition: .5s;
-        }
-        
-        .btn-ubicacion:hover {
-            background-color: #82A46B;
-            color: #fff;
-        }
         /* Marco decorativo */
         .marco-flores {
             position: relative;
@@ -294,29 +279,24 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        .contenido-ubicacion .col .info{
-            position: relative;
-            top: 40%;
-            background-color: #82A46B;
-            padding: 20px;
-            max-width: 350px;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #f8f8f8;
-        }
-        
-        .contenido-ubicacion .col .info ul{
-            list-style: none;
-        }
-        .contenido-ubicacion .col .info ul li{
+
+        .contenido-ubicacion .col img {
+            border-radius: 12%; /* Redondea completamente la imagen */
+            width: 300px; /* Ajusta el tamaño si es necesario */
+            height: 300px; /* Asegúrate de que tenga forma circular */
+            object-fit: cover; /* Asegura que el contenido se recorte correctamente */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra para estilo */
             margin-bottom: 20px;
+
         }
-        .contenido-ubicacion .col .info ul li i{
-            color: #f8f8f8;
-            display: inline-block;
-            margin-right: 20px;
-            font-weight: bold; /* Negrita opcional */
+
+        .contenido-ubicacion .col img:hover {
+            transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
+            
         }
+
+        
 
 
         /* Flex container para centrar ambas secciones horizontalmente */
@@ -326,6 +306,7 @@
             justify-content: center; /* Centrar horizontalmente */
             gap: 30px; /* Espaciado entre el video y el mapa */
             margin-top: 20px; /* Ajusta si es necesario */
+            
         }
 
         /* Estilos opcionales para mejorar el diseño */
@@ -334,6 +315,32 @@
             max-width: 50%; /* Evitar que se estiren demasiado */
             text-align: center; /* Asegura el centrado del contenido */
         }
+
+        .info-container {
+            background-color: #82A46B;
+            padding: 8px;
+            border-radius: 10px;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            gap: 40px;
+        }
+        
+        .info-item {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+        }
+        
+        .info-item .icon {
+            font-size: 18px;
+            margin-right: 10px;
+            color: #ffffff;
+        }
+
+        
+
         /* *********************/
         /* seccion REGALO */
         /* *********************/
